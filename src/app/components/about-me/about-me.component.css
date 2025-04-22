@@ -1,0 +1,24 @@
+p {
+    text-align: justify;
+  }
+section { 
+    padding: 10px;
+    height: 80vh;
+    border-radius: 5px;
+    background-image: url('/assets/icons/wave.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+.myPhoto {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+}
+.myPhoto img{
+    border-radius: 10px;
+    box-shadow: 8px 1px 10px 5px #01b3012f;;
+}
