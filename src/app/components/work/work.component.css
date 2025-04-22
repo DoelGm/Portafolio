@@ -1,0 +1,12 @@
+.myWorks{
+    box-shadow: 12px 12px 12px -12px #00000077;
+}
+
+.myWorksImg img{
+    box-shadow: 12px 12px 12px -12px #00000077;
+}
+.myWorksImg:hover{
+    transform: scale(1.05);
+    transition: transform 0.5s ease;
+    
+}

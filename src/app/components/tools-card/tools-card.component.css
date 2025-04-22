@@ -5,7 +5,7 @@ section{
 .myTools{
     background-color: #0000009d;
     border-radius: 10px;
-    box-shadow: 12px 12px 12px -12px #00000077;;
+    box-shadow: 12px 12px 12px -12px #00000077;
 }
    
 
@@ -15,7 +15,7 @@ section{
     margin: 5px;
     padding: 5px;
     border-radius: 10px;
-    box-shadow: 0px 0px 20px 0px #00000077;;
+    box-shadow: 0px 0px 20px 0px #00000077;
     
 }
 .tools:hover{

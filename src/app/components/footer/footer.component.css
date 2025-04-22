@@ -20,3 +20,10 @@ section{
     background-repeat: no-repeat;
     background-size: cover;
 }
+.myLink:hover{
+    transform: scale(1.05);
+    transition: transform 0.5s ease;
+}
+.contact-me{
+    box-shadow: 12px 12px 12px -12px #00000077;
+}
