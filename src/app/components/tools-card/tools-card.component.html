@@ -1,13 +1,13 @@
-<section class="myTools">
-    <h3 class="text-center mb-5 p-3">
-        <span class="badge text-bg-success w-md-auto d-inline-flex align-items-center gap-2 p-3 text-wrap">
+<section class="">
+    <h3 data-aos="zoom-in" class="text-center  mb-5 p-3">
+        <span class="badge myTools text-bg-warning w-md-auto d-inline-flex align-items-center gap-2 p-3 text-wrap">
         <img src="assets/icons/tools-svgrepo-com.svg" width="32" height="32" alt="Saludo">
         <span class="fs-5 text-break">Herramientas que domino </span>
         </span>
     </h3> 
 <div class="container">
     <div class="row justify-content-center">
-        <div class="col-6 col-md-3 text-center mb-4" *ngFor="let herramienta of herramientas">
+        <div data-aos="zoom-in" class="col-6 tools col-md-3 text-center mb-4" *ngFor="let herramienta of herramientas">
           <img [src]="herramienta.imagen" [alt]="herramienta.nombre" width="60" height="60" class="mb-2" />
           <p class="mb-0">{{ herramienta.nombre }}</p>
         </div>

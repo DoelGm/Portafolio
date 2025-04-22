@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { FooterComponent } from "./components/footer/footer.component";
 import { NavegationComponent } from "./components/navegation/navegation.component";
-
+import * as AOS from 'aos';
 @Component({
   selector: 'app-root',
   imports: [RouterOutlet, FooterComponent, NavegationComponent],
@@ -10,5 +10,8 @@ import { NavegationComponent } from "./components/navegation/navegation.componen
   styleUrl: './app.component.css'
 })
 export class AppComponent {
+  ngOnInit() {
+    AOS.init();
+  }
   title = 'portafolio';
 }
