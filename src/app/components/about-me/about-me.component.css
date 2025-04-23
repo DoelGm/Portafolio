@@ -34,6 +34,14 @@ Animations
 	        animation: jello-horizontal 0.9s both infinite;   
 }
 
+
+
+@media screen and (max-width: 768px) {
+    .aboutMeText{
+      color: black;
+    }
+}
+
 /**
  * ----------------------------------------
  * animation wobble-hor-bottom
