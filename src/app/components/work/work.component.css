@@ -13,3 +13,10 @@
 .text{
     text-align: justify;
 }
+@media (max-width: 768px) {
+
+    .text{
+        text-align: justify;
+        font-size: 0.8rem;
+   }
+}
