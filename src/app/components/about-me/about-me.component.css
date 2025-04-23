@@ -40,6 +40,25 @@ Animations
     .aboutMeText{
       color: black;
     }
+    
+}
+@media screen and (max-width: 380px) {
+  p {
+      font-size: 1rem;
+  }
+
+ 
+  span{
+    font-size: 1rem;
+  }
+
+  h1, h2, h3 {
+      font-size: 1.4rem;
+  }
+
+  .navbar-brand span {
+      font-size: 1rem;
+  }
 }
 
 /**

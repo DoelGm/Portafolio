@@ -34,3 +34,10 @@ section{
     }
     
 }
+@media (max-width: 380px) {
+    section{
+        height: 100vh;
+    }
+
+    
+}
