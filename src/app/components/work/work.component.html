@@ -1,44 +1,31 @@
-<section id="myWork">
-    <h1 data-aos="zoom-in" class="text-center  p-5"><span class="badge text-bg-warning d-block d-md-inline text-center myWorks text-md-start">Mis trabajos</span></h1>
-    <div class="row mb-5 align-items-center">
+<section id="myWork" class="py-5">
+  <h1 class="text-center mb-5" data-aos="zoom-in">
+    <span class="badge text-bg-warning px-4 py-3 fs-3">Mis trabajos</span>
+  </h1>
 
-        <div data-aos="zoom-in" class="col-md-6 myWorksImg d-flex justify-content-center">
+  <div class="container">
+    <div *ngFor="let project of projects" class="row justify-content-center mb-5">
+      <div class="col-md-8">
+        <div class="card shadow rounded overflow-hidden">
+          <div class="bg-light d-flex justify-content-center p-4">
             <img 
-              src="assets/imgs/Captura de pantalla 2025-04-22 161457.png" 
-              class="img-fluid rounded shadow"
-              width="400"
-              height="400"
-              alt="Captura de pantalla"
-            >
+              [src]="project.imgSrc" 
+              [alt]="project.imgAlt" 
+              class="rounded" 
+              style="max-width: 100%; height: auto;" />
           </div>
-
-        <div class="col-md-6">
-            <h2 class="p-3" data-aos="zoom-in"> <img src="/assets/icons/pc-svgrepo-com.svg" width="50px" height="50px" alt="">Ecomers De Papel de Regalo</h2>
-            <p class="p-3 text"  data-aos="zoom-in">Ocupé el rol de desarrollador backend, utilizando tecnologías como Node.js. Estuve a cargo del diseño y desarrollo de múltiples APIs clave para el funcionamiento del sitio web.</p>
-            <p class="p-3 text" data-aos="zoom-in">Además, implementé un sistema de autenticación y autorización de usuarios, asegurando la protección de datos sensibles y la privacidad de los usuarios.</p>
-            <!-- <button data-aos="fade-left" class="btn btn-warning">Visitar</button> -->
+          <div class="p-4 bg-dark text-white text-center text-md-start">
+            <h2 class="mb-3 d-flex align-items-center justify-content-center justify-content-md-start" data-aos="zoom-in">
+              <img [src]="project.iconSrc" [alt]="project.iconAlt" width="50" height="50" class="me-3" />
+              {{ project.title }}
+            </h2>
+            <p class="text-warning fst-italic mb-3">{{ project.role }}</p>
+            <div *ngFor="let desc of project.description" class="mb-3 text-white">
+              <p class="text-white">{{ desc }}</p>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
-    <div class="row mb-5 align-items-center">
-
-        <div data-aos="zoom-in" class="col-md-6 d-flex myWorksImg justify-content-center">
-          <img 
-            src="assets/imgs/Captura de pantalla 2025-04-22 145112.png" 
-            class="img-fluid rounded shadow"
-            width="400"
-            height="400"
-            alt="Captura de pantalla"
-          >
-        </div>
-    
-        <div class="col-md-6">
-            <h2 class="p-3" data-aos="zoom-in"><img src="/assets/icons/tornado-svgrepo-com.svg" width="50px" height="50px" alt=""> Hidrobladers</h2>
-            <p class="p-3 text" data-aos="zoom-in">En este proyecto participé en el desarrollo frontend utilizando Angular, donde trabajé con HTML y CSS para el diseño y la implementación de las interfaces y pantallas del sitio web.</p>
-            <p class="p-3 text" data-aos="zoom-in">Además, utilicé Bootstrap para asegurar que el sitio web fuera responsivo y se adaptara a diferentes dispositivos y tamaños de pantalla.</p>        
-            <!-- <button data-aos="fade-left" class="btn btn-warning">Visitar</button> -->
-        </div>
-    </div>
+  </div>
 </section>
-
-
-

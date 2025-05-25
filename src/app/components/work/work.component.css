@@ -1,17 +1,29 @@
-.myWorks{
-    box-shadow: 12px 12px 12px -12px #00000077;
+
+#myWork {
+  background: #f9fafb;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.myWorksImg img{
-    box-shadow: 12px 12px 12px -12px #00000077;
+.myWorksImg {
+  max-width: 420px;
+  transition: transform 0.3s ease;
 }
-.myWorksImg:hover{
-    transform: scale(1.05);
-    transition: transform 0.5s ease;
-    
+
+.myWorksImg:hover {
+  transform: scale(1.05);
 }
-.text{
+
+h2 {
+  font-weight: 700;
+  font-size: 1.8rem;
+  color: #212529;
+}
+
+p {
     text-align: justify;
+  font-size: 1.1rem;
+  color: #495057;
+  
 }
 @media (max-width: 768px) {
 
