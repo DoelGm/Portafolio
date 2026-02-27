@@ -1,7 +1,23 @@
 
 #myWork {
-  background: #f9fafb;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  position: relative;
+  background: url('/assets/imgs/shapelined-_JBKdviweXI-unsplash.jpg');
+  background-size: cover;
+  background-position: center;
+}
+.card {
+  transition: transform 0.8s ease;
+}
+.card:hover {
+  transform: scale(1.01);
+}
+
+#myWork::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  backdrop-filter: blur(8px);
+  background: rgba(255,255,255,0.6);
 }
 
 .myWorksImg {
